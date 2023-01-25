@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.1.19)  25 JAN 2023 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.1.19)  25 JAN 2023 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**artbook.tex
-(./artbook.tex
+**stdbook.tex
+(./stdbook.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -26,7 +26,7 @@ File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 (/usr/share/texmf/tex/latex/asymptote/asymptote.sty
 Package: asymptote 2021/12/29 v1.37 Asymptote style file for LaTeX
- (./artbook.pre)
+ (./stdbook.pre)
 \ASYbox=\box50
 \ASYdimen=\dimen139
 \c@asy=\count194
@@ -81,7 +81,7 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-\openout4 = `artbook.pre'.
+\openout4 = `stdbook.pre'.
 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/csvsimple/csvsimple.sty
@@ -411,10 +411,10 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 \@indexfile=\write6
-\openout6 = `artbook.idx'.
+\openout6 = `stdbook.idx'.
 
 
-Writing index file artbook.idx
+Writing index file stdbook.idx
 \c@comen=\count324
 \c@thm=\count325
 \c@lem=\count326
@@ -422,7 +422,7 @@ Writing index file artbook.idx
 \c@prop=\count328
 \c@rem=\count329
 \c@ill=\count330
-(./artbook.aux
+(./stdbook.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 
@@ -445,7 +445,7 @@ LaTeX Warning: Label `tab:w1wwwww' multiply defined.
 LaTeX Warning: Label `tab:w1wwwww' multiply defined.
 
 )
-\openout1 = `artbook.aux'.
+\openout1 = `stdbook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -469,14 +469,16 @@ File: spanish.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 )
-\openout3 = `asy/artbook-1.asy'.
+\openout3 = `asy/stdbook-1.asy'.
 
-File: asy/artbook-1.eps Graphic file (type eps)
 
-<asy/artbook-1.eps>
+
+Package asymptote Warning: file `asy/stdbook-1.eps' not found on input line 99.
+
+
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 103.
- [1
+[1
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
@@ -488,10 +490,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
-\openout3 = `asy/artbook-2.asy'.
+\openout3 = `asy/stdbook-2.asy'.
 
-File: asy/artbook-2.eps Graphic file (type eps)
-<asy/artbook-2.eps>
+
+Package asymptote Warning: file `asy/stdbook-2.eps' not found on input line 149
+.
+
+
 Overfull \hbox (11.99689pt too wide) in paragraph at lines 152--160
 \OT1/cmtt/m/n/10 Todos los derechos reservados. Ninguna parte de esto libro pue
 de ser
@@ -503,7 +508,7 @@ Overfull \hbox (1.49698pt too wide) in paragraph at lines 152--160
 miso
  []
 
-[2] (./artbook.toc
+[2] (./stdbook.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -541,7 +546,7 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 
 )
 \tf@toc=\write7
-\openout7 = `artbook.toc'.
+\openout7 = `stdbook.toc'.
 
  [1
 
@@ -550,7 +555,7 @@ LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
  [2
 
-] (./artbook.lof
+] (./stdbook.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
@@ -564,7 +569,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@lof=\write8
-\openout8 = `artbook.lof'.
+\openout8 = `stdbook.lof'.
 
  [3]
 LaTeX Info: Redefining \. on input line 175.
@@ -572,12 +577,12 @@ LaTeX Info: Redefining \% on input line 175.
  [4
 
 ]
-(./artbook.lot
+(./stdbook.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write9
-\openout9 = `artbook.lot'.
+\openout9 = `stdbook.lot'.
 
  [5]
 LaTeX Info: Redefining \. on input line 181.
@@ -597,29 +602,35 @@ LaTeX Info: Redefining \% on input line 205.
 
 ]
 Cap\'{\i }tulo 1.
-\openout3 = `asy/artbook-3.asy'.
+\openout3 = `asy/stdbook-3.asy'.
 
-File: asy/artbook-3.eps Graphic file (type eps)
-<asy/artbook-3.eps>
-\openout3 = `asy/artbook-4.asy'.
 
-File: asy/artbook-4.eps Graphic file (type eps)
- <asy/artbook-4.eps>
-\openout3 = `asy/artbook-5.asy'.
+Package asymptote Warning: file `asy/stdbook-3.eps' not found on input line 270
+.
 
-File: asy/artbook-5.eps Graphic file (type eps)
- <asy/artbook-5.eps>
-\openout3 = `asy/artbook-6.asy'.
+\openout3 = `asy/stdbook-4.asy'.
 
-File: asy/artbook-6.eps Graphic file (type eps)
 
-<asy/artbook-6.eps> [1]
-Underfull \vbox (badness 6268) has occurred while \output is active []
+Package asymptote Warning: file `asy/stdbook-4.eps' not found on input line 301
+.
 
-LaTeX Info: Redefining \. on input line 388.
-LaTeX Info: Redefining \% on input line 388.
- [2]
-[3]
+\openout3 = `asy/stdbook-5.asy'.
+
+
+Package asymptote Warning: file `asy/stdbook-5.eps' not found on input line 331
+.
+
+[1]
+\openout3 = `asy/stdbook-6.asy'.
+
+
+
+Package asymptote Warning: file `asy/stdbook-6.eps' not found on input line 383
+.
+
+LaTeX Info: Redefining \. on input line 420.
+LaTeX Info: Redefining \% on input line 420.
+[2]
 Overfull \hbox (29.66606pt too wide) in alignment at lines 423--430
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -644,9 +655,7 @@ Overfull \hbox (29.66606pt too wide) in alignment at lines 439--449
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
-[4] [5]
+
 Overfull \hbox (29.66606pt too wide) in alignment at lines 454--461
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -696,7 +705,7 @@ Overfull \hbox (29.66606pt too wide) in alignment at lines 499--509
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-
+[3]
 Overfull \hbox (29.66606pt too wide) in alignment at lines 510--517
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -721,9 +730,7 @@ Overfull \hbox (29.66606pt too wide) in alignment at lines 526--536
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 536.
-LaTeX Info: Redefining \% on input line 536.
-[6]
+
 Overfull \hbox (29.66606pt too wide) in alignment at lines 537--544
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -773,39 +780,49 @@ Overfull \hbox (29.66606pt too wide) in alignment at lines 580--590
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-\openout3 = `asy/artbook-7.asy'.
+\openout3 = `asy/stdbook-7.asy'.
 
-File: asy/artbook-7.eps Graphic file (type eps)
-<asy/artbook-7.eps>
-\openout3 = `asy/artbook-8.asy'.
 
-File: asy/artbook-8.eps Graphic file (type eps)
- <asy/artbook-8.eps>
-\openout3 = `asy/artbook-9.asy'.
+Package asymptote Warning: file `asy/stdbook-7.eps' not found on input line 625
+.
 
-File: asy/artbook-9.eps Graphic file (type eps)
- <asy/artbook-9.eps>
-\openout3 = `asy/artbook-10.asy'.
+\openout3 = `asy/stdbook-8.asy'.
 
-File: asy/artbook-10.eps Graphic file (type eps)
 
-<asy/artbook-10.eps>
-\openout3 = `asy/artbook-11.asy'.
+Package asymptote Warning: file `asy/stdbook-8.eps' not found on input line 645
+.
 
-File: asy/artbook-11.eps Graphic file (type eps)
- <asy/artbook-11.eps> (./artbook.bbl [7]
+\openout3 = `asy/stdbook-9.asy'.
+
+
+Package asymptote Warning: file `asy/stdbook-9.eps' not found on input line 689
+.
+
+\openout3 = `asy/stdbook-10.asy'.
+
+
+Package asymptote Warning: file `asy/stdbook-10.eps' not found on input line 75
+9.
+
+\openout3 = `asy/stdbook-11.asy'.
+
+
+Package asymptote Warning: file `asy/stdbook-11.eps' not found on input line 80
+4.
+
+(./stdbook.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [8] [9]
+ [4] [5]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [10
+ [6
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) (./artbook.ind) [1]
+) (./stdbook.ind) [1]
 LaTeX Info: Redefining \. on input line 832.
 LaTeX Info: Redefining \% on input line 832.
  [2
@@ -818,7 +835,7 @@ Overfull \hbox (141.6671pt too wide) in paragraph at lines 833--835
 wwwww 
  []
 
-[3] (./artbook.aux
+[3] (./stdbook.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -830,12 +847,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8518 strings out of 480113
- 148434 string characters out of 5892657
- 525491 words of memory out of 5000000
- 26275 multiletter control sequences out of 15000+600000
+ 8507 strings out of 480113
+ 148080 string characters out of 5892657
+ 522491 words of memory out of 5000000
+ 26264 multiletter control sequences out of 15000+600000
  474570 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  70i,7n,77p,760b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on artbook.dvi (23 pages, 33520 bytes).
+Output written on stdbook.dvi (19 pages, 31488 bytes).
