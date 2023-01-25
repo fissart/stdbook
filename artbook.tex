@@ -1,0 +1,680 @@
+\documentclass[a4paper]{book}
+%\usepackage[inline]{asymptote}
+\usepackage{asymptote}
+\usepackage{csvsimple}
+\usepackage{numprint}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{spreadtab}
+\usepackage{expl3}
+\ExplSyntaxOn
+% make an internal function available to the user
+\cs_set_eq:NN \fpeval \fp_eval:n
+\ExplSyntaxOff
+\def\asydir{asy}
+%latexmk main.tex -ps -pdf- -dvi- -pvc
+%live-server www.html in folder//npm install -g live-server ///
+%while true; do inotifywait -e CLOSE_WRITE www.asy; asy -f html  www.asy; done; ///
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[spanish]{babel}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{graphicx}\usepackage{longtable}
+\usepackage{booktabs}
+%\usepackage{ulem}
+%\usepackage{textcomp}
+%\usepackage{showframe}
+%\usepackage[utf8]{inputenc}
+%\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[apaciteclassic, nosectionbib, tocbib]{apacite}
+\usepackage{usebib}
+\bibinput{bb}
+\usepackage{makeidx}
+\makeindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{comen}{Comentario}[chapter]
+\newtheorem{thm}{Teorema}[chapter]
+\newtheorem{defn}[thm]{Definición}
+\newtheorem{lem}{Lema}[thm]
+\newtheorem{cor}{Corolario}[thm]
+\newtheorem{prop}{Proposicion}[thm]
+\newtheorem{rem}{Remark}[thm]
+\newtheorem{ill}{Illustration}[thm]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\qw}{\phi}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\pa}[1]{\left(#1\right)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{asydef}
+settings.prc=false;
+defaultpen(fontsize(11 pt));
+defaultpen(linewidth(0.7pt));
+settings.render=2;
+\end{asydef}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+{
+\centering
+\vspace{3cm}
+\bf{\huge ARTE Y MATEMÁTICAS}\\
+\bf{\large ARTE Y MATEMÁTICAS}\\
+\vspace{0.5cm}
+\bf{RICARDO}\\
+\vspace{5cm}
+
+\begin{asy}
+import graph3;
+size(300,0);
+currentprojection=perspective(8,-8,8);
+triple f(pair t) {
+  real u=t.x;
+  real v=t.y;
+  real r=2-cos(u);
+  real x=3*cos(u)*(1+sin(u))+r*cos(v)*(u < pi ? cos(u) : -1);
+  real y=8*sin(u)+(u < pi ? r*sin(u)*cos(v) : 0);
+  real z=r*sin(v);
+  return (x,y,z);
+}
+surface s=surface(f,(0,0),(2pi,2pi),16,8,Spline);
+draw(s,blue+opacity(0.7), meshpen=black+0.6bp,render(merge=true));
+
+string lo="$\alpha=\sum_1^\infty$";
+string hi="$\beta=\rho^3$";
+real h=0.05;
+begingroup3("parametrization");
+//draw(surface(scale(0.08)*lo,s,0,1,h,bottom=false),"[0,0.5pi]");
+//draw(surface(scale(0.08)*rotate(90)*hi,s,2,1,h,bottom=false),"[pi,2pi]");
+endgroup3();
+//axes3("$x$","$y$","$z$", Arrows3);
+\end{asy}
+\vfill
+%ps://asy.marris.fr/
+Departmento de mathemática y física, FIMGC USNCH\\
+\emph{E-mail}: \texttt{ricardomallqui@gmail.com}\\
+URL: \textsf{www.fractales.com}
+
+}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ {
+ 	\thispagestyle{empty}
+ 	\noindent\bf{Arte y Matemáticas}\\
+ 	\bf{Ricardo Michel Mallqui Baños}\\
+ 	\vspace{3cm}
+
+\noindent Un libro basado en codigo asymptote LaTeX y pstricks\\
+
+\noindent Bibliografia.\\
+\noindent Incluye Indice.\\
+1. Geometry, Differential. 2. Curves. 3. Surfaces. \\
+ 	\vfill
+ 	\noindent
+ 		\begin{asy}
+ 	size(300);
+ 	path ltrans(path p,int d)
+ 	{
+ 	path a=rotate(65)*scale(0.4)*p;
+ 	return shift(point(p,(1/d)*length(p))-point(a,0))*a;
+ 	}
+ 	path rtrans(path p, int d)
+ 	{
+ 	path a=reflect(point(p,0),point(p,length(p)))*rotate(65)*scale(0.35)*p;
+ 	return shift(point(p,(1/d)*length(p))-point(a,0))*a;
+ 	}
+
+ 	void drawtree(int depth, path branch)
+ 	{
+ 	if(depth == 0) return;
+ 	real breakp=(1/depth)*length(branch);
+ 	draw(subpath(branch,0,breakp),blue);
+ 	drawtree(depth-1,subpath(branch,breakp,length(branch)));
+ 	drawtree(depth-1,ltrans(branch,depth));
+ 	drawtree(depth-1,rtrans(branch,depth));
+ 	return;
+ 	}
+
+ 	path start=(0,0)..controls (-1/10,1/3) and (-1/20,2/3)..(1/20,1);
+ 	drawtree(7,start);
+ 	\end{asy}
+
+%\noindent \texttt{\textregistered\;\textcopyright\; 2023 pa-esfa, Inc. UNSCH, Huamanga}\\
+\noindent %\texttt{\textregistered\;\textcopyright}\\
+\texttt{Todos los derechos reservados. Ninguna parte de esto
+libro puede ser reproducido en cualquier forma,
+o por cualquier medio, sin permiso
+por escrito del editor.}\\
+Departmento de mathemática y física, FIMGC USNCH\\
+\emph{E-mail}: \texttt{ricardomallqui@gmail.com}\\
+URL: \textsf{www.fractales.com}
+
+ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\renewcommand\listfigurename{Índice general}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\addcontentsline{toc}{chapter}{Índice general}
+\tableofcontents
+\renewcommand\listfigurename{Lista de figuras}
+\addcontentsline{toc}{chapter}{Lista de figuras}
+\listoffigures
+
+\renewcommand\listtablename{Lista de tablas}
+\addcontentsline{toc}{chapter}{Lista de tablas}
+\listoftables
+\newpage
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Presentación}
+\addcontentsline{toc}{chapter}{Presentación}
+
+\underline{\underline{Double underlined text}}
+{Double underlined text}
+\textsl{\underline{Slanted underlined}}
+\textsc{\underline{Small caps underlined}}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Curvas}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\begin{table}[!ht]
+\caption{123456789}
+\centering
+\begin{asy}
+import math;
+size(300,0);
+
+int[] x={2,3,5,7,11,14,3};
+
+int y=-1;
+
+for (int k : x){
+if(k==7){
+label("$\frac{1}{2}$"+string(k),(-3,--y));
+}else
+{
+label("$\int^{"+string(k)+"}_{"+string(k)+"}$",(-2,--y),E,blue);
+}
+
+}
+int l=0;
+for (int k=0; k<15;++k){
+
+label("$\displaystyle\int^{"+string(k)+"}_{"+string(k)+"}f(x)$",(-8,-l-2.1*k),E,blue);
+
+}
+
+label(scale(1.1)*"$\int_{e}^{3}\epsilon$",(-2,0.5));
+
+
+void tablepythagore(int m=9, int n=9){
+	int[][] y=new int[m+1][n+1];
+
+	for (int i=1; i<=m; ++i)
+	{
+
+			for (int j=1; j<=n; ++j)
+			{
+			y[i][j]=i*j;
+			if(i!=2&&j!=1){
+			label(scale(.9)*format("%i",y[i][j]),(j,-i));
+		    }
+			if(i==1){
+			label(format("%i",j),(j,0),paleblue);
+			//dot((j,0));
+			}
+			}
+
+		label(format("%i",i),(0,-i),red);
+		label(format("%i",i-1),(1,-i),red);
+	}
+	draw((-2,-0.5)--(-2,-9.5), orange+linewidth(0.5mm));
+draw((-0.5,-0.5)--(9.5,-0.5), orange+linewidth(0.5mm));
+draw((-0.5,-9.5)--(9.5,-9.5), orange+linewidth(0.5mm));
+//add(shift(-.5,-.5-m)*grid(n+1,m+1,orange));
+label(scale(1.1)*"$\int_{e}^{3}\epsilon$",(-0.5,0.5));
+}
+
+tablepythagore();
+
+shipout(bbox(.25cm,Fill(white)));
+\end{asy}
+
+\end{table}
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+
+
+\begin{figure}[!ht]
+\centering	\begin{asy}
+import graph;
+size(12cm,7cm,IgnoreAspect);
+typedef real realfcn(real);
+realfcn F(real p) {
+return new real(real t) {return 1/(sqrt(2*pi)*(1/(4*p)))*exp(-(t-1/(2*p))^2/(2*(1/(4*p))^2));};
+}
+for(int i=1; i < 7; ++i){
+real rho=(1/(4*i));
+real mu=(1/(2*i));
+draw(graph(F(i),-0.1,1, n=200, Hermite),Pen(i),
+"$\frac{1}{"+format( "%.3f", rho)+"\sqrt{2\pi}}{e^{-\frac{(x-"+format( "%.3f", mu)+")^2}{2("+format( "%.3f", rho)+")^2}}}$");
+}
+label("$\displaystyle\frac{1}{\rho\sqrt{2\pi}}{e^{-\frac{(x-\mu)^2}{2(\rho)^2}}}$",(0.5,8));
+xaxis("$x$",0.1,LeftTicks);
+yaxis("$y$",0,LeftTicks);
+//xaxis(BottomTop,LeftTicks);
+//yaxis(LeftRight,RightTicks(trailingzero));
+//yaxis("$y$",LeftRight,RightTicks(trailingzero));
+//attach(legend(),truepoint(E),20E,UnFill);
+attach(legend(2),(point(S).x,truepoint(S).y),1S);
+\end{asy}
+\caption{wwwwww}
+\end{figure}
+
+
+
+
+
+\begin{figure}[!ht]
+\centering	\begin{asy}
+import graph;
+size(12cm,7cm,IgnoreAspect);
+typedef real realfcn(real);
+realfcn F(real p) {
+	return new real(real t) {return 1/(pi*(p)*(1+((t-5)/(p))^2));};
+}
+for(int i=1; i < 7; ++i){
+real rho=(1/(4*i));
+real mu=(1/(2*i));
+draw(graph(F(i),0,10, n=200, Hermite),Pen(i),
+"$\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$");
+}
+label("$\displaystyle\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$",(7,0.3));
+xaxis("$x$",0.1,LeftTicks);
+yaxis("$y$",0,LeftTicks);
+//xaxis(BottomTop,LeftTicks);
+//yaxis(LeftRight,RightTicks(trailingzero));
+//yaxis("$y$",LeftRight,RightTicks(trailingzero));
+//attach(legend(),truepoint(E),20E,UnFill);
+attach(legend(2),(point(S).x,truepoint(S).y),1S);
+\end{asy}
+\caption{wwwwww}
+\end{figure}
+
+
+
+
+
+
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+
+
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+	import graph;
+	size(300,0);
+	int a=-1, b=2;
+	real f(real x) {return x^3-x+2;}
+	real g(real x) {return x^2;}
+	draw(graph(f,a,b,operator ..),red);
+	draw(graph(g,a,b,operator ..),blue);
+	xaxis();
+	int n=30;
+	real width=(b-a)/(real) n;
+	path w=graph(f,a,b,operator ..);
+	path ww=graph(g,a,b,operator ..);
+	path h=buildcycle((a,g(a))--(a,f(a)),w,(b,f(b))--(b,g(b)),ww);
+	fill(h,orange);
+	draw(h,black+linewidth(0.3mm));
+	labelx("$a$",a);
+	labelx("$b$",b);
+	draw((a,0)--(a,g(a)),dotted);
+	draw((b,0)--(b,g(b)),dotted);
+	real m=a+0.73*(b-a);
+	arrow("$f(x)$",(m,f(m)),N,red);
+	arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
+	int j=2;
+	real xi=b-j*width;
+	real xp=xi+width;
+	real xm=0.5*(xi+xp);
+	pair dot=(xm,0.5*(f(xm)+g(xm)));
+	dot(dot,green+4.0);
+	arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,green);
+	\end{asy}
+	\caption{$f(x)$ wwww $\left(x,\frac{f(x)+g(x)}{2}\right)$ www}
+\end{figure}
+
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+When we put (vertically) large expressions inside of parentheses (or brackets, or curly braces, etc.), the parentheses don't resize to fit the expression and instead remain relatively small. For instance, $$f(x) = \pi(\frac{\sqrt{x}}{x-1})$$ comes out as
+
+
+\begin{longtable}{>{\color{blue}}ccc>{\color{blue}}c>{\color{yellow}}c}
+	\caption{Combinaciones de los tres segmentos de la seccion aurea.}
+	\label{tab:w1wwwww}\\
+	\toprule
+	\textbf{Ecuación} & \textbf{Simplicación} & \textbf{Raices}& \multicolumn{2}{c}{\textbf{Raices simplicación}}\\\midrule
+	 &  &  & $x_1$ & $x_2$ \\
+	\midrule
+	\endfirsthead % <-- This denotes the end of the header, which will be shown on the first page only
+ \multicolumn{4}{c}{{\bfseries \tablename\ \thetable{} -- continua de la página anterior}} \\
+	\toprule
+	\textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}& \multicolumn{2}{c}{\textbf{Raices}}\\\midrule
+	$\alpha$ & $\beta$ & $\gamma$ & $x_1$ \\
+	\midrule
+	\endhead
+	\multicolumn{4}{c}{{Continúa en la proxima página}} \\ \midrule
+	\endfoot
+	\bottomrule
+	\endlastfoot
+	$\frac{x}{x-1}=\frac{x-1}{1}$&$ x^2-3x+1=0 $ & $x=\frac{3\pm\sqrt{5}}{2}$  & $x_1=\fpeval{round((1+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\\midrule
+	$\frac{x+1}{x}=\frac{x}{1}$&$ x^2-x-1=0$     & $x=\frac{1\pm\sqrt{5}}{2}$  & $x_1=\fpeval{round((-1+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\\midrule
+	$\frac{x+1}{x}=\frac{x}{1}$&$ x^2-x-1=0$     & $x=\frac{1\pm\sqrt{5}}{2}$  & $x_1=\fpeval{round((3+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\\midrule
+	$\frac{1}{x}  =\frac{x}{1-x}$&$ x^2+x-1=0 $  &  $x=\frac{-1\pm\sqrt{5}}{2}$& $x_1=\fpeval{round((-3+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\\midrule
+	$\frac{x+1}{x}=\frac{x}{1}$&$ x^2-x-1=0$     & $x=\frac{1\pm\sqrt{5}}{2}$  & $x_1=\fpeval{round((1+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\\midrule
+	$\frac{x+1}{x}=\frac{x}{1}$&$ x^2-x-1=0$     & $x=\frac{1\pm\sqrt{5}}{2}$  & $x_1=\fpeval{round((1+sqrt(5))/2,3)}$ & $x_2=\fpeval{round((1-sqrt(5))/2,3)}$\\
+
+\end{longtable}
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+	import graph;
+	size(300,0);
+	int a=0, b=2;
+	real f(real x) {return 1/(sqrt(2*pi)*(0.5))*exp(-(x-1)^2/(2*(0.5)^2));}
+	real g(real x) {return 0;}
+	path w=graph(f,a,b,operator ..);
+	draw(graph(f,a-1,b+1,operator ..),orange+linewidth(0.3mm));
+	//draw(graph(g,a,b,operator ..),black);
+	xaxis();
+	int n=50;
+	path h=(a,0)--w--(b,0)--cycle;
+	fill(h,orange);
+	draw(h,black+linewidth(0.3mm));
+	labelx("$a$",a);
+	labelx("$b$",b);
+	pair mid=(a+0.5*(b-a),(f(a+0.5*(b-a))+g(a+0.5*(b-a)))/2);
+	label("$90\%$",mid,white);
+	real m=a+0.5*(b-a);
+	real p=a-0.1;
+	real q=b+0.1;
+	//arrow("$f(x)$",(m,f(m)),N,red);
+	arrow("$5\%$",(p,0.5*f(p)),NW,orange);
+	dot((p,0.5*f(p)),orange);
+	arrow("$5\%$",(q,0.5*f(q)),NE,orange);
+	dot((q,0.5*f(q)),orange);
+	//arrow("$g(x)$",(m,g(m)),dir(-90),0.8cm,blue);
+	\end{asy}
+	\caption{www}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+	import stats;
+import graph;
+size(12cm,6cm,false);
+real[] tabxi={0,5,8,10,12,15,20,30,35};
+real[] tabni={5,6,7,5,6,2,1,0};
+real[] tabhi;
+for(int i=0; i < tabni.length; ++i)
+  tabhi[i]=tabni[i]/(tabxi[i+1]-tabxi[i]);
+
+histogram(tabxi,tabhi,low=0,bars=true,yellow);
+xaxis("wwwwwwww",Bottom, RightTicks(Step=2,step=1),above=true);
+shipout(bbox(3mm,white));
+	\end{asy}
+	\caption{www}
+\end{figure}
+
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+	size(7.5cm,0);
+// Tableau des modalités
+string[] tabmod={"Modalit\'e 1","Modalit\'e 2","Modalit\'e 3",
+                 "Modalit\'e 4","Modalit\'e 5"};
+// Tableau des effectifs (ou fréquences)
+real[] tabeff={20,6,7,10,11};
+// Tableau des décalages éventuels des secteurs
+real[] tabdecsec={0,.1,0,.2,0};
+// Tableau des décalages éventuels des labels
+real[] tabdeclab={0,.5,.5,.2,.2};
+// Les deux couleurs utilisées pour composer
+// les couleurs des secteurs
+pen color1=green,color2=blue;
+// Le stylo pour les labels
+pen p3=blue,p4=yellow+white;
+///////////////////////////////////////////////////////////////
+/// Ce qui suit n'est a priori pas à changer et pourrait être
+/// ajouté un de ces jours à une extension perso stats_gm.asy
+/// pour être remplacé par :
+/// diacirculaire(tabmod,tabeff,tabdec,color1,color2);
+///////////////////////////////////////////////////////////////
+real[] tabangle,tabanglecumule,tabanglelabel;
+tabanglecumule[0]=0;
+int n=tabeff.length;
+for(int i=0; i<n; ++i) {
+  tabangle[i]=tabeff[i]*360/sum(tabeff);
+  tabanglecumule[i+1]=tabanglecumule[i]+tabangle[i];
+  tabanglelabel[i]=tabanglecumule[i]+tabangle[i]/2;
+  path secteur=(0,0)--arc((0,0),1,tabanglecumule[i],tabanglecumule[i+1])--cycle;
+  transform t1=shift(tabdecsec[i]*dir(tabanglelabel[i])),
+            t2=shift((.5+tabdecsec[i]+tabdeclab[i])*dir(tabanglelabel[i]));
+  filldraw(t1*secteur,i/n*color1+(1-i/n)*color2+white);
+  label(tabmod[i],t2*(0,0),p3,Fill(p4));
+}
+shipout(bbox(3mm,white));
+	\end{asy}
+	\caption{www}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+	size(7.5cm,0);
+
+void bargraph(real X, real Y,
+              real ymin, real ymax, real ystep,
+              real tickwidth, string yformat,
+              Label LX, Label LY, Label[] LLX,
+              real[] height,
+              pen p=nullpen){
+    draw((0,0)--(0,Y),EndArrow);
+    draw((0,0)--(X,0),EndArrow);
+    label(LX,(X,0),plain.SE,fontsize(9));
+    label(LY,(0,Y),plain.N,fontsize(9));
+    real yscale=Y/(ymax+ystep);
+    for(real y=ymin; y<ymax; y+=ystep) {
+        draw((-tickwidth,yscale*y)--(0,yscale*y));
+        label(format(yformat,y),(-tickwidth,yscale*y),plain.W,fontsize(9));
+    }
+    int n=LLX.length;
+    real xscale=X/(2*n+2);
+    for(int i=0;i<n;++i) {
+        real x=xscale*(2*i+1);
+        path P=(x,0)--(x,height[i]*yscale)--(x+xscale,height[i]*yscale)--(x+xscale,0)--cycle;
+        fill(P,p);
+        draw(P);
+        label(LLX[i],(x+xscale/2),plain.S,fontsize(10));
+    }
+    for(int i=0;i<n;++i)
+        draw((0,height[i]*yscale)--(X,height[i]*yscale),dashed);
+}
+
+string yf="%#.1f";
+Label[] LX={"Printemps","Et\'e","Automne","Hiver"};
+for(int i=0;i<LX.length;++i) LX[i]=rotate(45)*LX[i];
+real[] H={12.9,21.3,9.8,4.3};
+
+bargraph(X=60,Y=100,
+         ymin=2,ymax=24,ystep=2,
+         tickwidth=1,
+         yf,
+         "Saison","$\theta$ moyen",
+         LX,H,
+         yellow);
+	\end{asy}
+	\caption{www}
+\end{figure}
+
+
+
+\begin{figure}[!ht]
+	\centering
+	\begin{asy}
+/* Illustration aidant au calcul de la médiane
+   d'une série à caractère quantitatif continu
+   d'après le polygone des effectifs cumulés croissants
+   par interpolation linéaire */
+
+/* Variables à modifier */
+
+// Définition de la taille de l'image
+size(7cm,5cm,false);
+// Points A et B définissant l'un des segments du polygone
+pair A=(8,37),B=(10,57.5);
+// Ordonnée du point de [AB] dont on cherche l'abscisse
+real yM=50;
+
+/* A priori, ce qui suit ne doit pas être modifié
+   la figure va s'adapter aux valeurs données précédemment */
+
+real xM=(yM-A.y)*(B.x-A.x)/(B.y-A.y)+A.x;
+real dx=.2(B.x-A.x), dy=.2(B.y-A.y);
+draw((A.x-dx,A.y-2dy)--(B.x+dx,A.y-2dy),.7bp+black);
+draw((A.x-2dx,A.y-dy)--(A.x-2dx,B.y+dy),.7bp+black);
+
+draw(A--B,1.2bp+black);
+dot("$A$",A,SW,blue);
+dot("$B$",B,NE,blue);
+dot("$M$",(xM,yM),SE,red);
+
+draw((A.x-2dx,A.y)--A--(A.x,A.y-2dy),dashed+.5bp+black);
+draw((A.x-2dx,B.y)--B--(B.x,A.y-2dy),dashed+.5bp+black);
+draw((A.x-2dx,yM)--(xM,yM)--(xM,A.y-2dy),dashed+.5bp+black);
+label(format("$%f$",A.x),(A.x,A.y-2dy),S);
+label(format("$%f$",A.y),(A.x-2dx,A.y),W);
+label(format("$%f$",B.x),(B.x,A.y-2dy),S);
+label(format("$%f$",B.y),(A.x-2dx,B.y),W);
+label("$x_M$?",(xM,A.y-2dy),S,red);
+label(format("$%f$",yM),(A.x-2dx,yM),W);
+	\end{asy}
+	\caption{www}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{apacite}
+\bibliography{bb}
+\addcontentsline{toc}{chapter}{Indices}
+\printindex
+
+
+
+\appendix
+\pagenumbering{roman}
+\setcounter{page}{1}
+\chapter{Sistemas de coordenadas}
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+\end{document}
+/*
+real[][] f(real a, real b, real c)
+{
+    if (b^2-4*a*c<0) {
+      real[][] w={
+      {-b/2,(sqrt(abs(b^2-4*a*c)))/2*a,-b/2,(-b+sqrt(abs(b^2-4*a*c)))/2*a}//,{0,0}
+      };
+      return w;
+   }
+     real[][] w={
+     {(-b+sqrt(abs(b^2-4*a*c)))/2*a,(-b-sqrt(abs(b^2-4*a*c)))/2*a}//,{0,0}
+     };
+     return w;
+}
+
+write(f(1,4,9));
+write(f(1,4,9)[0][3]);
+*/

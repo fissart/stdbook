@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Índice general}{\es@scroman {i}}{}%
+\contentsline {chapter}{Lista de figuras}{\es@scroman {i}}{}%
+\contentsline {chapter}{Lista de tablas}{\es@scroman {iii}}{}%
+\contentsline {chapter}{Presentación}{\es@scroman {vii}}{}%
+\contentsline {chapter}{\numberline {1}Curvas}{1}{}%
+\contentsline {chapter}{Referencias}{\es@scroman {i}}{}%
+\contentsline {chapter}{Indices}{\es@scroman {i}}{}%
+\contentsline {chapter}{\numberline {A}Sistemas de coordenadas}{\es@scroman {iii}}{}%
