@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.1.19)  24 JAN 2023 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.1.19)  25 JAN 2023 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,6 +425,25 @@ Writing index file artbook.idx
 (./artbook.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
+
+LaTeX Warning: Label `tab:w1wwwww' multiply defined.
+
 )
 \openout1 = `artbook.aux'.
 
@@ -601,10 +620,163 @@ LaTeX Info: Redefining \. on input line 388.
 LaTeX Info: Redefining \% on input line 388.
  [2]
 [3]
+Overfull \hbox (29.66606pt too wide) in alignment at lines 423--430
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 430--434
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 434--437
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 437--439
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 439--449
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 449.
+LaTeX Info: Redefining \% on input line 449.
+[4] [5]
+Overfull \hbox (29.66606pt too wide) in alignment at lines 454--461
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 461--465
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 465--468
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 468--470
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 470--480
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 483--490
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 490--494
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 494--497
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 497--499
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 499--509
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 510--517
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 517--521
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 521--524
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 524--526
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 526--536
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 536.
+LaTeX Info: Redefining \% on input line 536.
+[6]
+Overfull \hbox (29.66606pt too wide) in alignment at lines 537--544
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 544--548
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 548--551
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 551--553
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 553--563
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 564--571
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 571--575
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 575--578
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 578--580
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.66606pt too wide) in alignment at lines 580--590
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
 \openout3 = `asy/artbook-7.asy'.
 
 File: asy/artbook-7.eps Graphic file (type eps)
- <asy/artbook-7.eps>
+<asy/artbook-7.eps>
 \openout3 = `asy/artbook-8.asy'.
 
 File: asy/artbook-8.eps Graphic file (type eps)
@@ -621,34 +793,27 @@ File: asy/artbook-10.eps Graphic file (type eps)
 \openout3 = `asy/artbook-11.asy'.
 
 File: asy/artbook-11.eps Graphic file (type eps)
- <asy/artbook-11.eps> (./artbook.bbl
+ <asy/artbook-11.eps> (./artbook.bbl [7]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [4]
-
-LaTeX Warning: Text page 5 contains only floats.
-
-[5]
+ [8] [9]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [6] [7]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [8
+ [10
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ) (./artbook.ind) [1]
-LaTeX Info: Redefining \. on input line 659.
-LaTeX Info: Redefining \% on input line 659.
+LaTeX Info: Redefining \. on input line 832.
+LaTeX Info: Redefining \% on input line 832.
  [2
 
 ]
 Ap\'{e}ndice A.
 
-Overfull \hbox (141.6671pt too wide) in paragraph at lines 660--662
+Overfull \hbox (141.6671pt too wide) in paragraph at lines 833--835
 []\OT1/cmr/m/n/10 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwww
 wwwww 
  []
@@ -660,14 +825,17 @@ LaTeX Info: Redefining \% on input line 8.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 8512 strings out of 480113
- 148403 string characters out of 5892657
- 493491 words of memory out of 5000000
- 26269 multiletter control sequences out of 15000+600000
+ 8518 strings out of 480113
+ 148434 string characters out of 5892657
+ 525491 words of memory out of 5000000
+ 26275 multiletter control sequences out of 15000+600000
  474570 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 70i,7n,77p,760b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,77p,760b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on artbook.dvi (21 pages, 19164 bytes).
+Output written on artbook.dvi (23 pages, 33520 bytes).

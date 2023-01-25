@@ -1,0 +1,90 @@
+# Fdb version 3
+["cusdep asy eps asy/ww2-1"] 1674660159 "asy/ww2-1.asy" "asy/ww2-1.eps" "asy/ww2-1" 1674660160
+  "asy/ww2-1.asy" 1674660160 1395 20aac4f4c048947c8be42af7f9514aaa "latex"
+  (generated)
+  "asy/ww2-1.eps"
+["cusdep asy eps asy/ww2-2"] 1674660158 "asy/ww2-2.asy" "asy/ww2-2.eps" "asy/ww2-2" 1674660160
+  "asy/ww2-2.asy" 1674660160 1135 701447bef4e763bdb76d013fc793b5b7 "latex"
+  (generated)
+  "asy/ww2-2.eps"
+["cusdep asy eps asy/ww2-3"] 1674660158 "asy/ww2-3.asy" "asy/ww2-3.eps" "asy/ww2-3" 1674660160
+  "asy/ww2-3.asy" 1674660160 1011 393fe25fd2e321700f6cd96ff69a3bd2 "latex"
+  (generated)
+  "asy/ww2-3.eps"
+["cusdep asy eps asy/ww2-4"] 1674660158 "asy/ww2-4.asy" "asy/ww2-4.eps" "asy/ww2-4" 1674660160
+  "asy/ww2-4.asy" 1674660160 1109 d1c3d8d6a8ce32a5d1b6813e9f5db170 "latex"
+  (generated)
+  "asy/ww2-4.eps"
+["cusdep asy eps asy/ww2-5"] 1674660157 "asy/ww2-5.asy" "asy/ww2-5.eps" "asy/ww2-5" 1674660160
+  "asy/ww2-5.asy" 1674660160 1088 a981f5b33235045d49be4925df84a1f1 "latex"
+  (generated)
+  "asy/ww2-5.eps"
+["cusdep asy eps asy/ww2-6"] 1674660157 "asy/ww2-6.asy" "asy/ww2-6.eps" "asy/ww2-6" 1674660160
+  "asy/ww2-6.asy" 1674660160 860 9cd9a1c3d3d06dcee20c3ae4f39fe363 "latex"
+  (generated)
+  "asy/ww2-6.eps"
+["cusdep asy eps asy/ww2-7"] 1674660156 "asy/ww2-7.asy" "asy/ww2-7.eps" "asy/ww2-7" 1674660160
+  "asy/ww2-7.asy" 1674660160 1787 3389f03c0352a0260442b258af5b811b "latex"
+  (generated)
+  "asy/ww2-7.eps"
+["cusdep asy eps asy/ww2-8"] 1674660156 "asy/ww2-8.asy" "asy/ww2-8.eps" "asy/ww2-8" 1674660160
+  "asy/ww2-8.asy" 1674660160 1409 416c8e02413cf42651f3187b15611bd0 "latex"
+  (generated)
+  "asy/ww2-8.eps"
+["cusdep asy eps asy/ww2-9"] 1674660156 "asy/ww2-9.asy" "asy/ww2-9.eps" "asy/ww2-9" 1674660160
+  "asy/ww2-9.asy" 1674660160 1587 19f48a211e1ad7f37de61f5383e44b07 "latex"
+  (generated)
+  "asy/ww2-9.eps"
+["dvips"] 1674660160 "ww2.dvi" "ww2.ps" "ww2" 1674660160
+  "ww2.dvi" 1674660160 6108 f88a2dce83a6373377bc51dfc4e1f6be "latex"
+  (generated)
+  "ww2.ps"
+["latex"] 1674660160 "ww2.tex" "ww2.dvi" "ww2" 1674660160
+  "/etc/texmf/web2c/texmf.cnf" 1674161562 498 20555721818605192524bca5e630d95a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty" 1576016007 8622 63834878edeb14dd71d58d8f22bc3e06 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty" 1572645307 480 5778104efadad304ced77548ca2184b1 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty" 1572645307 488 4565444a3e75e59cb2702dc42e18f482 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty" 1575499628 8356 7bbb2c2373aa810be568c29e333da8ed ""
+  "/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty" 1600895880 17859 4409f8f50cd365c68e684407e5350b1b ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty" 1622581934 5157 f308c7c04889e16c588e78aa42599fae ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def" 1498170935 5895 4b59bd0c17e1116fd6b6e7c683dea655 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty" 1622581934 18399 7e40f80366dffb22c0e7b70517db5cb4 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty" 1636758526 7996 a8fb260d598dcaf305a7ae7b9c3e3229 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1622581934 2671 4de6781a30211fe0ea4c672e4a2a8166 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty" 1636758526 4009 187ea2dc3194cd5a76cd99a8d7a6c4d0 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1642022539 35666 245843706ef8bde3dc5fcca41b43ec1e ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/tex/latex/asymptote/asymptote.sty" 1644416058 9805 9d37510eec7028350e77f1cf8a7c4ca7 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/latex.fmt" 1674161580 1456594 9bf029ebfec7af81e7cda1c41f0a95ea ""
+  "asy/ww2-1.eps" 1674660159 121874 d687b00ed9c4e94a8b5546d859a35f28 "cusdep asy eps asy/ww2-1"
+  "asy/ww2-2.eps" 1674660159 263952 01fbfefedad074d6089dfbbc4f0c27b2 "cusdep asy eps asy/ww2-2"
+  "asy/ww2-3.eps" 1674660158 251331 c0494ef56ac5b78539be75574c32f861 "cusdep asy eps asy/ww2-3"
+  "asy/ww2-4.eps" 1674660158 141466 38b41a8f491ea0aaf2a39df2cf2d897b "cusdep asy eps asy/ww2-4"
+  "asy/ww2-5.eps" 1674660158 76877 bc8f44314e5c75ca93c5f850863f63e1 "cusdep asy eps asy/ww2-5"
+  "asy/ww2-6.eps" 1674660157 53410 2462cd98c48b8f4f89b003282b4f851f "cusdep asy eps asy/ww2-6"
+  "asy/ww2-7.eps" 1674660157 44871 b6605dd0f6a1f44cc09617e2e0e5b709 "cusdep asy eps asy/ww2-7"
+  "asy/ww2-8.eps" 1674660156 83241 462a2cc09ceb792909fa9f316c45cdef "cusdep asy eps asy/ww2-8"
+  "asy/ww2-9.eps" 1674660156 71097 ff29a48211d5f9d1d208e72a11f4f64f "cusdep asy eps asy/ww2-9"
+  "ww2.aux" 1674660160 1050 2798babb0d07431616a920a8c801588a "latex"
+  "ww2.pre" 1674660160 405 9aa44fb719d83820b7d49ddf88a3ac37 "latex"
+  "ww2.tex" 1674159701 12186 e0b113c1d5370ca73202fb9088b22125 ""
+  (generated)
+  "asy/ww2-1.asy"
+  "asy/ww2-2.asy"
+  "asy/ww2-3.asy"
+  "asy/ww2-4.asy"
+  "asy/ww2-5.asy"
+  "asy/ww2-6.asy"
+  "asy/ww2-7.asy"
+  "asy/ww2-8.asy"
+  "asy/ww2-9.asy"
+  "ww2.aux"
+  "ww2.dvi"
+  "ww2.log"
+  "ww2.pre"

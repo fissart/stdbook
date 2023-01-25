@@ -1,60 +1,60 @@
 # Fdb version 3
-["bibtex artbook"] 1674604869 "artbook.aux" "artbook.bbl" "artbook" 1674604869
+["bibtex artbook"] 1674660627 "artbook.aux" "artbook.bbl" "artbook" 1674660633
   "/usr/share/texlive/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "artbook.aux" 1674604869 2590 b9f5cf0333ff580bdf5e340161b9bb16 "latex"
+  "artbook.aux" 1674660633 6161 c3656b32f36ba2f71a2f96fea01537c7 "latex"
   "bb.bib" 1674256775 30549 ee093154a10c77e62df5848c84b5130c ""
   (generated)
   "artbook.bbl"
   "artbook.blg"
-["cusdep asy eps asy/artbook-1"] 0 "asy/artbook-1.asy" "asy/artbook-1.eps" "asy/artbook-1" 1674604869
-  "asy/artbook-1.asy" 1674604869 1031 77a0c19859d1b5b47a9d85bc6ea62074 "latex"
+["cusdep asy eps asy/artbook-1"] 0 "asy/artbook-1.asy" "asy/artbook-1.eps" "asy/artbook-1" 1674660633
+  "asy/artbook-1.asy" 1674660633 1031 77a0c19859d1b5b47a9d85bc6ea62074 "latex"
   (generated)
   "asy/artbook-1.eps"
-["cusdep asy eps asy/artbook-10"] 1674602026 "asy/artbook-10.asy" "asy/artbook-10.eps" "asy/artbook-10" 1674604869
-  "asy/artbook-10.asy" 1674604869 1414 143c176bb826e6d5789a9322240bfb9b "latex"
+["cusdep asy eps asy/artbook-10"] 1674602026 "asy/artbook-10.asy" "asy/artbook-10.eps" "asy/artbook-10" 1674660633
+  "asy/artbook-10.asy" 1674660633 1414 143c176bb826e6d5789a9322240bfb9b "latex"
   (generated)
   "asy/artbook-10.eps"
-["cusdep asy eps asy/artbook-11"] 1674602026 "asy/artbook-11.asy" "asy/artbook-11.eps" "asy/artbook-11" 1674604869
-  "asy/artbook-11.asy" 1674604869 1592 292271cfe5ab97ce693fbc89f9466f80 "latex"
+["cusdep asy eps asy/artbook-11"] 1674602026 "asy/artbook-11.asy" "asy/artbook-11.eps" "asy/artbook-11" 1674660633
+  "asy/artbook-11.asy" 1674660633 1592 292271cfe5ab97ce693fbc89f9466f80 "latex"
   (generated)
   "asy/artbook-11.eps"
-["cusdep asy eps asy/artbook-2"] 0 "asy/artbook-2.asy" "asy/artbook-2.eps" "asy/artbook-2" 1674604869
-  "asy/artbook-2.asy" 1674604869 996 12cd85b20af6d647cfc9ae5ad7cb06fa "latex"
+["cusdep asy eps asy/artbook-2"] 0 "asy/artbook-2.asy" "asy/artbook-2.eps" "asy/artbook-2" 1674660633
+  "asy/artbook-2.asy" 1674660633 996 12cd85b20af6d647cfc9ae5ad7cb06fa "latex"
   (generated)
   "asy/artbook-2.eps"
-["cusdep asy eps asy/artbook-3"] 1674602025 "asy/artbook-3.asy" "asy/artbook-3.eps" "asy/artbook-3" 1674604869
-  "asy/artbook-3.asy" 1674604869 1399 d531b799d65dc56a1e3128741bf052dc "latex"
+["cusdep asy eps asy/artbook-3"] 1674602025 "asy/artbook-3.asy" "asy/artbook-3.eps" "asy/artbook-3" 1674660633
+  "asy/artbook-3.asy" 1674660633 1399 d531b799d65dc56a1e3128741bf052dc "latex"
   (generated)
   "asy/artbook-3.eps"
-["cusdep asy eps asy/artbook-4"] 1674602025 "asy/artbook-4.asy" "asy/artbook-4.eps" "asy/artbook-4" 1674604869
-  "asy/artbook-4.asy" 1674604869 1139 a9d31266ba50e475376166fbe955e779 "latex"
+["cusdep asy eps asy/artbook-4"] 1674602025 "asy/artbook-4.asy" "asy/artbook-4.eps" "asy/artbook-4" 1674660633
+  "asy/artbook-4.asy" 1674660633 1139 a9d31266ba50e475376166fbe955e779 "latex"
   (generated)
   "asy/artbook-4.eps"
-["cusdep asy eps asy/artbook-5"] 1674602024 "asy/artbook-5.asy" "asy/artbook-5.eps" "asy/artbook-5" 1674604869
-  "asy/artbook-5.asy" 1674604869 1015 bf5346028e6b96a0fee72464685e0956 "latex"
+["cusdep asy eps asy/artbook-5"] 1674602024 "asy/artbook-5.asy" "asy/artbook-5.eps" "asy/artbook-5" 1674660633
+  "asy/artbook-5.asy" 1674660633 1015 bf5346028e6b96a0fee72464685e0956 "latex"
   (generated)
   "asy/artbook-5.eps"
-["cusdep asy eps asy/artbook-6"] 1674602024 "asy/artbook-6.asy" "asy/artbook-6.eps" "asy/artbook-6" 1674604869
-  "asy/artbook-6.asy" 1674604869 1113 6b94da85632df682e02297e88052af0b "latex"
+["cusdep asy eps asy/artbook-6"] 1674602024 "asy/artbook-6.asy" "asy/artbook-6.eps" "asy/artbook-6" 1674660633
+  "asy/artbook-6.asy" 1674660633 1113 6b94da85632df682e02297e88052af0b "latex"
   (generated)
   "asy/artbook-6.eps"
-["cusdep asy eps asy/artbook-7"] 1674602023 "asy/artbook-7.asy" "asy/artbook-7.eps" "asy/artbook-7" 1674604869
-  "asy/artbook-7.asy" 1674604869 1092 502c63e2b5c68c78abbef833d3026be1 "latex"
+["cusdep asy eps asy/artbook-7"] 1674602023 "asy/artbook-7.asy" "asy/artbook-7.eps" "asy/artbook-7" 1674660633
+  "asy/artbook-7.asy" 1674660633 1092 502c63e2b5c68c78abbef833d3026be1 "latex"
   (generated)
   "asy/artbook-7.eps"
-["cusdep asy eps asy/artbook-8"] 1674602469 "asy/artbook-8.asy" "asy/artbook-8.eps" "asy/artbook-8" 1674604869
-  "asy/artbook-8.asy" 1674604869 693 2a47d3ae3601134a7d5b4b4f71e77e0f "latex"
+["cusdep asy eps asy/artbook-8"] 1674602469 "asy/artbook-8.asy" "asy/artbook-8.eps" "asy/artbook-8" 1674660633
+  "asy/artbook-8.asy" 1674660633 693 2a47d3ae3601134a7d5b4b4f71e77e0f "latex"
   (generated)
   "asy/artbook-8.eps"
-["cusdep asy eps asy/artbook-9"] 1674602023 "asy/artbook-9.asy" "asy/artbook-9.eps" "asy/artbook-9" 1674604869
-  "asy/artbook-9.asy" 1674604869 1791 a8842d1291eb9eb6d96b5c5cc8e71f20 "latex"
+["cusdep asy eps asy/artbook-9"] 1674660419 "asy/artbook-9.asy" "asy/artbook-9.eps" "asy/artbook-9" 1674660633
+  "asy/artbook-9.asy" 1674660633 1791 a8842d1291eb9eb6d96b5c5cc8e71f20 "latex"
   (generated)
   "asy/artbook-9.eps"
-["dvips"] 1674604869 "artbook.dvi" "artbook.ps" "artbook" 1674604869
-  "artbook.dvi" 1674604869 19164 f36b450871c10335fd02201ae2c70980 "latex"
+["dvips"] 1674660633 "artbook.dvi" "artbook.ps" "artbook" 1674660633
+  "artbook.dvi" 1674660633 33520 3eb5630161da2b8785e183cdf598b0c8 "latex"
   (generated)
   "artbook.ps"
-["latex"] 1674604869 "artbook.tex" "artbook.dvi" "artbook" 1674604869
+["latex"] 1674660632 "artbook.tex" "artbook.dvi" "artbook" 1674660633
   "/etc/texmf/web2c/texmf.cnf" 1674161562 498 20555721818605192524bca5e630d95a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -149,14 +149,14 @@
   "/usr/share/texmf/tex/latex/asymptote/asymptote.sty" 1644416058 9805 9d37510eec7028350e77f1cf8a7c4ca7 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/pdftex/latex.fmt" 1674161580 1456594 9bf029ebfec7af81e7cda1c41f0a95ea ""
-  "artbook.aux" 1674604869 2590 b9f5cf0333ff580bdf5e340161b9bb16 "latex"
-  "artbook.bbl" 1674604869 49 0eba253fc001332e731e8aba3f23127b "bibtex artbook"
+  "artbook.aux" 1674660633 6161 c3656b32f36ba2f71a2f96fea01537c7 "latex"
+  "artbook.bbl" 1674660627 49 0eba253fc001332e731e8aba3f23127b "bibtex artbook"
   "artbook.ind" 1674602026 0 d41d8cd98f00b204e9800998ecf8427e "makeindex artbook.idx"
-  "artbook.lof" 1674604869 664 3c59b84a91dc66892e900734241915f1 "latex"
-  "artbook.lot" 1674604869 247 4d06660812e73eaf47987f2667f831f5 "latex"
-  "artbook.pre" 1674604869 497 193da8bd438d35a6fdcdc8c1fabae21e "latex"
-  "artbook.tex" 1674604867 19326 2541486653aac31bf559b10937be36e2 ""
-  "artbook.toc" 1674604869 526 06bf4fdb2c1a970f02ba2c2d7399920a "latex"
+  "artbook.lof" 1674660633 664 bcd7a7ce19b8addd6f1d8b14387c7ebe "latex"
+  "artbook.lot" 1674660633 877 f29048fbb250f50a02e333ad62d19d01 "latex"
+  "artbook.pre" 1674660633 497 193da8bd438d35a6fdcdc8c1fabae21e "latex"
+  "artbook.tex" 1674660630 26291 9673ebca9ee27220763ccf8c0e5493e3 ""
+  "artbook.toc" 1674660633 526 06bf4fdb2c1a970f02ba2c2d7399920a "latex"
   "asy/artbook-1.eps" 1674256775 404766 8dddf9906640325b102de1a94ec4606e "cusdep asy eps asy/artbook-1"
   "asy/artbook-10.eps" 1674602026 83266 5f5e7657827f845f53dd35240f226c8d "cusdep asy eps asy/artbook-10"
   "asy/artbook-11.eps" 1674602026 71122 8695b7838fb534b5a6cd20428278a204 "cusdep asy eps asy/artbook-11"
@@ -167,7 +167,7 @@
   "asy/artbook-6.eps" 1674602024 141486 9c5f9dd53d0ec4503004c5234f0063ae "cusdep asy eps asy/artbook-6"
   "asy/artbook-7.eps" 1674602024 76897 6b63d08429023bdfb5a357b8353ad8ad "cusdep asy eps asy/artbook-7"
   "asy/artbook-8.eps" 1674602470 41991 abc5b8622912d75e23266634f5ccb834 "cusdep asy eps asy/artbook-8"
-  "asy/artbook-9.eps" 1674602023 44891 60dbfe59f34f2bb4f27cef3603f5b45f "cusdep asy eps asy/artbook-9"
+  "asy/artbook-9.eps" 1674660419 44891 c3a878cfb1e7b80c18232a9ae22ea8b2 "cusdep asy eps asy/artbook-9"
   "bb.bib" 1674256775 30549 ee093154a10c77e62df5848c84b5130c ""
   (generated)
   "artbook.aux"
@@ -189,8 +189,8 @@
   "asy/artbook-7.asy"
   "asy/artbook-8.asy"
   "asy/artbook-9.asy"
-["makeindex artbook.idx"] 1674602026 "artbook.idx" "artbook.ind" "artbook" 1674604869
-  "artbook.idx" 1674604869 0 d41d8cd98f00b204e9800998ecf8427e "latex"
+["makeindex artbook.idx"] 1674602026 "artbook.idx" "artbook.ind" "artbook" 1674660633
+  "artbook.idx" 1674660633 0 d41d8cd98f00b204e9800998ecf8427e "latex"
   (generated)
   "artbook.ilg"
   "artbook.ind"
