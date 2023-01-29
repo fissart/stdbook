@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.1.19)  29 JAN 2023 15:42
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.1.19)  29 JAN 2023 18:41
  restricted system commands enabled.
 **stdbook.tex
 (./stdbook.tex
@@ -669,32 +669,32 @@ LaTeX Warning: Reference `tab:w1w' on page 2 undefined on input line 261.
 [2]
 \openout3 = asy/stdbook-3.asy
 
-<asy/stdbook-3.pdf, id=55, 341.7558pt x 170.7168pt>
+<asy/stdbook-3.pdf, id=55, 341.44965pt x 170.7168pt>
 File: asy/stdbook-3.pdf Graphic file (type pdf)
 <use asy/stdbook-3.pdf>
-Package luatex.def Info: asy/stdbook-3.pdf  used on input line 346.
-(luatex.def)             Requested size: 341.75494pt x 170.71637pt.
+Package luatex.def Info: asy/stdbook-3.pdf  used on input line 355.
+(luatex.def)             Requested size: 341.44879pt x 170.71637pt.
  [3]
 \openout3 = asy/stdbook-4.asy
 
 <asy/stdbook-4.pdf, id=61, 142.26349pt x 125.87527pt>
 File: asy/stdbook-4.pdf Graphic file (type pdf)
 <use asy/stdbook-4.pdf>
-Package luatex.def Info: asy/stdbook-4.pdf  used on input line 374.
+Package luatex.def Info: asy/stdbook-4.pdf  used on input line 385.
 (luatex.def)             Requested size: 142.26312pt x 125.87495pt.
 
 \openout3 = asy/stdbook-5.asy
 <asy/stdbook-5.pdf, id=62, 213.39525pt x 272.96881pt>
 File: asy/stdbook-5.pdf Graphic file (type pdf)
 <use asy/stdbook-5.pdf>
-Package luatex.def Info: asy/stdbook-5.pdf  used on input line 425.
+Package luatex.def Info: asy/stdbook-5.pdf  used on input line 436.
 (luatex.def)             Requested size: 213.39471pt x 272.96814pt.
 
 \openout3 = asy/stdbook-6.asy
 <asy/stdbook-6.pdf, id=63, 199.1691pt x 142.26349pt>
 File: asy/stdbook-6.pdf Graphic file (type pdf)
 <use asy/stdbook-6.pdf>
-Package luatex.def Info: asy/stdbook-6.pdf  used on input line 456.
+Package luatex.def Info: asy/stdbook-6.pdf  used on input line 467.
 (luatex.def)             Requested size: 199.1686pt x 142.26312pt.
  [4<./asy/stdbook-3.pdf><./asy/stdbook-4.pdf>] [5<./asy/stdbook-5.pdf><./asy/std
 book-6.pdf>]
@@ -705,50 +705,50 @@ Capítulo 2.
 Capítulo 3.
 
 \openout3 = asy/stdbook-7.asy
-<asy/stdbook-7.pdf, id=126, 341.42255pt x 302.42184pt>
+<asy/stdbook-7.pdf, id=128, 341.42255pt x 302.42184pt>
 File: asy/stdbook-7.pdf Graphic file (type pdf)
 <use asy/stdbook-7.pdf>
-Package luatex.def Info: asy/stdbook-7.pdf  used on input line 532.
+Package luatex.def Info: asy/stdbook-7.pdf  used on input line 543.
 (luatex.def)             Requested size: 341.4217pt x 302.4211pt.
 
 \openout3 = asy/stdbook-8.asy
-<asy/stdbook-8.pdf, id=127, 342.02681pt x 297.80258pt>
+<asy/stdbook-8.pdf, id=129, 342.02681pt x 297.80258pt>
 File: asy/stdbook-8.pdf Graphic file (type pdf)
 <use asy/stdbook-8.pdf>
-Package luatex.def Info: asy/stdbook-8.pdf  used on input line 562.
+Package luatex.def Info: asy/stdbook-8.pdf  used on input line 573.
 (luatex.def)             Requested size: 342.02597pt x 297.80185pt.
 [7
 
 <./asy/stdbook-7.pdf>]
 \openout3 = asy/stdbook-9.asy
 
-<asy/stdbook-9.pdf, id=178, 301.125pt x 239.90027pt>
+<asy/stdbook-9.pdf, id=180, 301.125pt x 239.90027pt>
 File: asy/stdbook-9.pdf Graphic file (type pdf)
 <use asy/stdbook-9.pdf>
-Package luatex.def Info: asy/stdbook-9.pdf  used on input line 614.
+Package luatex.def Info: asy/stdbook-9.pdf  used on input line 625.
 (luatex.def)             Requested size: 301.12425pt x 239.89967pt.
 
-Overfull \hbox (29.68095pt too wide) in alignment at lines 621--628
+Overfull \hbox (29.68095pt too wide) in alignment at lines 632--639
  [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (29.68095pt too wide) in alignment at lines 628--632
+Overfull \hbox (29.68095pt too wide) in alignment at lines 639--643
  [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (29.68095pt too wide) in alignment at lines 632--635
+Overfull \hbox (29.68095pt too wide) in alignment at lines 643--646
  [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (29.68095pt too wide) in alignment at lines 635--637
+Overfull \hbox (29.68095pt too wide) in alignment at lines 646--648
  [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (29.68095pt too wide) in alignment at lines 637--647
+Overfull \hbox (29.68095pt too wide) in alignment at lines 648--658
  [][][][][][][][][][][][][][] 
  []
 
@@ -764,10 +764,10 @@ Capítulo 4.
 Capítulo 5.
 
 \openout3 = asy/stdbook-10.asy
-<asy/stdbook-10.pdf, id=273, 301.125pt x 74.97711pt>
+<asy/stdbook-10.pdf, id=275, 301.125pt x 74.97711pt>
 File: asy/stdbook-10.pdf Graphic file (type pdf)
 <use asy/stdbook-10.pdf>
-Package luatex.def Info: asy/stdbook-10.pdf  used on input line 770.
+Package luatex.def Info: asy/stdbook-10.pdf  used on input line 781.
 (luatex.def)             Requested size: 301.12425pt x 74.97691pt.
 (./stdbook.bbl [14
 
@@ -779,7 +779,7 @@ Package luatex.def Info: asy/stdbook-10.pdf  used on input line 770.
 ])
 Apéndice A.
 
-Overfull \hbox (141.52008pt too wide) in paragraph at lines 810--812
+Overfull \hbox (141.52008pt too wide) in paragraph at lines 821--823
 []\TU/lmr/m/n/10 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwww
 www 
  []
@@ -829,10 +829,10 @@ m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on stdbook.pdf (25 pages, 584371 bytes).
+Output written on stdbook.pdf (25 pages, 586752 bytes).
 
-PDF statistics: 402 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
+PDF statistics: 404 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
