@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-11";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
@@ -12,39 +13,29 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-/* Illustration aidant au calcul de la médiane
-d'une série à caractère quantitatif continu
-d'après le polygone des effectifs cumulés croissants
-par interpolation linéaire */
-
-/* Variables à modifier */
-
-// Définition de la taille de l'image
-size(7cm,5cm,false);
-// Points A et B définissant l'un des segments du polygone
-pair A=(8,37),B=(10,57.5);
-// Ordonnée du point de [AB] dont on cherche l'abscisse
-real yM=50;
-
-/* A priori, ce qui suit ne doit pas être modifié
-la figure va s'adapter aux valeurs données précédemment */
-
-real xM=(yM-A.y)*(B.x-A.x)/(B.y-A.y)+A.x;
-real dx=.2(B.x-A.x), dy=.2(B.y-A.y);
-draw((A.x-dx,A.y-2dy)--(B.x+dx,A.y-2dy),.7bp+black);
-draw((A.x-2dx,A.y-dy)--(A.x-2dx,B.y+dy),.7bp+black);
-
-draw(A--B,1.2bp+black);
-dot("$A$",A,SW,blue);
-dot("$B$",B,NE,blue);
-dot("$M$",(xM,yM),SE,red);
-
-draw((A.x-2dx,A.y)--A--(A.x,A.y-2dy),dashed+.5bp+black);
-draw((A.x-2dx,B.y)--B--(B.x,A.y-2dy),dashed+.5bp+black);
-draw((A.x-2dx,yM)--(xM,yM)--(xM,A.y-2dy),dashed+.5bp+black);
-label(format("$%f$",A.x),(A.x,A.y-2dy),S);
-label(format("$%f$",A.y),(A.x-2dx,A.y),W);
-label(format("$%f$",B.x),(B.x,A.y-2dy),S);
-label(format("$%f$",B.y),(A.x-2dx,B.y),W);
-label("$x_M$?",(xM,A.y-2dy),S,red);
-label(format("$%f$",yM),(A.x-2dx,yM),W);
+import graph;
+size(300,0);
+int a=0, b=2;
+real f(real x) {return 1/(sqrt(2*pi)*(0.5))*exp(-(x-1)^2/(2*(0.5)^2));}
+real g(real x) {return 0;}
+path w=graph(f,a,b,operator ..);
+draw(graph(f,a-1,b+1,operator ..),orange+linewidth(0.3mm));
+//draw(graph(g,a,b,operator ..),black);
+xaxis();
+int n=50;
+path h=(a,0)--w--(b,0)--cycle;
+fill(h,orange);
+draw(h,black+linewidth(0.3mm));
+labelx("$a$",a);
+labelx("$b$",b);
+pair mid=(a+0.5*(b-a),(f(a+0.5*(b-a))+g(a+0.5*(b-a)))/2);
+label("$90\%$",mid,white);
+real m=a+0.5*(b-a);
+real p=a-0.1;
+real q=b+0.1;
+//arrow("$f(x)$",(m,f(m)),N,red);
+arrow("$5\%$",(p,0.5*f(p)),NW,orange);
+dot((p,0.5*f(p)),orange);
+arrow("$5\%$",(q,0.5*f(q)),NE,orange);
+dot((q,0.5*f(q)),orange);
+//arrow("$g(x)$",(m,g(m)),dir(-90),0.8cm,blue);

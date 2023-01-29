@@ -8,4 +8,3 @@
 \InputIfFileExists {asy/\jobname -8.pre}{}{}
 \InputIfFileExists {asy/\jobname -9.pre}{}{}
 \InputIfFileExists {asy/\jobname -10.pre}{}{}
-\InputIfFileExists {asy/\jobname -11.pre}{}{}

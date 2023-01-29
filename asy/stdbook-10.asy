@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-10";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
@@ -12,45 +13,29 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-size(7.5cm,0);
-
-void bargraph(real X, real Y,
-real ymin, real ymax, real ystep,
-real tickwidth, string yformat,
-Label LX, Label LY, Label[] LLX,
-real[] height,
-pen p=nullpen){
-draw((0,0)--(0,Y),EndArrow);
-draw((0,0)--(X,0),EndArrow);
-label(LX,(X,0),plain.SE,fontsize(9));
-label(LY,(0,Y),plain.N,fontsize(9));
-real yscale=Y/(ymax+ystep);
-for(real y=ymin; y<ymax; y+=ystep) {
-draw((-tickwidth,yscale*y)--(0,yscale*y));
-label(format(yformat,y),(-tickwidth,yscale*y),plain.W,fontsize(9));
-}
-int n=LLX.length;
-real xscale=X/(2*n+2);
-for(int i=0;i<n;++i) {
-real x=xscale*(2*i+1);
-path P=(x,0)--(x,height[i]*yscale)--(x+xscale,height[i]*yscale)--(x+xscale,0)--cycle;
-fill(P,p);
-draw(P);
-label(LLX[i],(x+xscale/2),plain.S,fontsize(10));
-}
-for(int i=0;i<n;++i)
-draw((0,height[i]*yscale)--(X,height[i]*yscale),dashed);
-}
-
-string yf="%#.1f";
-Label[] LX={"Printemps","Et\'e","Automne","Hiver"};
-for(int i=0;i<LX.length;++i) LX[i]=rotate(45)*LX[i];
-real[] H={12.9,21.3,9.8,4.3};
-
-bargraph(X=60,Y=100,
-ymin=2,ymax=24,ystep=2,
-tickwidth=1,
-yf,
-"Saison","$\theta$ moyen",
-LX,H,
-yellow);
+import graph;
+size(300,0);
+int a=0, b=2;
+real f(real x) {return 1/(sqrt(2*pi)*(0.5))*exp(-(x-1)^2/(2*(0.5)^2));}
+real g(real x) {return 0;}
+path w=graph(f,a,b,operator ..);
+draw(graph(f,a-1,b+1,operator ..),orange+linewidth(0.3mm));
+//draw(graph(g,a,b,operator ..),black);
+xaxis();
+int n=50;
+path h=(a,0)--w--(b,0)--cycle;
+fill(h,orange);
+draw(h,black+linewidth(0.3mm));
+labelx("$a$",a);
+labelx("$b$",b);
+pair mid=(a+0.5*(b-a),(f(a+0.5*(b-a))+g(a+0.5*(b-a)))/2);
+label("$90\%$",mid,white);
+real m=a+0.5*(b-a);
+real p=a-0.1;
+real q=b+0.1;
+//arrow("$f(x)$",(m,f(m)),N,red);
+arrow("$5\%$",(p,0.5*f(p)),NW,orange);
+dot((p,0.5*f(p)),orange);
+arrow("$5\%$",(q,0.5*f(q)),NE,orange);
+dot((q,0.5*f(q)),orange);
+//arrow("$g(x)$",(m,g(m)),dir(-90),0.8cm,blue);

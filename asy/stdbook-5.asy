@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-5";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
@@ -12,23 +13,44 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-import graph;
-size(12cm,7cm,IgnoreAspect);
-typedef real realfcn(real);
-realfcn F(real p) {
-return new real(real t) {return 1/(pi*(p)*(1+((t-5)/(p))^2));};
+size(7.5cm,0);
+pen dashed=linetype(new real[] {5,3});
+void bargraph(real X, real Y,
+real ymin, real ymax, real ystep,
+real tickwidth, string yformat,
+Label LX, Label LY, Label[] LLX,
+real[] height,
+pen p=nullpen){
+draw((0,0)--(0,Y),EndArrow);
+draw((0,0)--(X,0),EndArrow);
+label(LX,(X,0),plain.SE);
+label(LY,(0,Y),plain.N);//fontsize(9)
+real yscale=Y/(ymax+ystep);
+for(real y=ymin; y<ymax; y+=ystep) {
+draw((-tickwidth,yscale*y)--(0,yscale*y));
+label(format(yformat,y),(-tickwidth,yscale*y),plain.W);
 }
-for(int i=1; i < 7; ++i){
-real rho=(1/(4*i));
-real mu=(1/(2*i));
-draw(graph(F(i),0,10, n=200, Hermite),Pen(i),
-"$\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$");
+int n=LLX.length;
+real xscale=X/(2*n+2);
+for(int i=0;i<n;++i) {
+real x=xscale*(2*i+1);
+path P=(x,0)--(x,height[i]*yscale)--(x+xscale,height[i]*yscale)--(x+xscale,0)--cycle;
+fill(P,p);
+draw(P);
+label(LLX[i],(x+xscale/2),plain.S);
 }
-label("$\displaystyle\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$",(7,0.3));
-xaxis("$x$",0.1,LeftTicks);
-yaxis("$y$",0,LeftTicks);
-//xaxis(BottomTop,LeftTicks);
-//yaxis(LeftRight,RightTicks(trailingzero));
-//yaxis("$y$",LeftRight,RightTicks(trailingzero));
-//attach(legend(),truepoint(E),20E,UnFill);
-attach(legend(2),(point(S).x,truepoint(S).y),1S);
+for(int i=0;i<n;++i)
+draw((0,height[i]*yscale)--(X,height[i]*yscale),dashed);
+}
+string yf="%#.1f";
+Label[] LX={"wwwwww","www","www1","www2","www3","www"};
+for(int i=0;i<LX.length;++i) LX[i]=rotate(45)*LX[i];
+real[] H={3,5.3,12.9,21.3,9.8,4.3};
+
+bargraph(X=50,Y=70,
+ymin=2,ymax=23,ystep=5,
+tickwidth=2,
+yf,
+"$www$","$\theta_3$",
+LX,H,
+orange+white);

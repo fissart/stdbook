@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-9";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
@@ -12,38 +13,32 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-size(7.5cm,0);
-// Tableau des modalités
-string[] tabmod={"Modalit\'e 1","Modalit\'e 2","Modalit\'e 3",
-"Modalit\'e 4","Modalit\'e 5"};
-// Tableau des effectifs (ou fréquences)
-real[] tabeff={20,6,7,10,11};
-// Tableau des décalages éventuels des secteurs
-real[] tabdecsec={0,.1,0,.2,0};
-// Tableau des décalages éventuels des labels
-real[] tabdeclab={0,.5,.5,.2,.2};
-// Les deux couleurs utilisées pour composer
-// les couleurs des secteurs
-pen color1=green,color2=blue;
-// Le stylo pour les labels
-pen p3=blue,p4=yellow+white;
-///////////////////////////////////////////////////////////////
-/// Ce qui suit n'est a priori pas à changer et pourrait être
-/// ajouté un de ces jours à une extension perso stats_gm.asy
-/// pour être remplacé par :
-/// diacirculaire(tabmod,tabeff,tabdec,color1,color2);
-///////////////////////////////////////////////////////////////
-real[] tabangle,tabanglecumule,tabanglelabel;
-tabanglecumule[0]=0;
-int n=tabeff.length;
-for(int i=0; i<n; ++i) {
-tabangle[i]=tabeff[i]*360/sum(tabeff);
-tabanglecumule[i+1]=tabanglecumule[i]+tabangle[i];
-tabanglelabel[i]=tabanglecumule[i]+tabangle[i]/2;
-path secteur=(0,0)--arc((0,0),1,tabanglecumule[i],tabanglecumule[i+1])--cycle;
-transform t1=shift(tabdecsec[i]*dir(tabanglelabel[i])),
-t2=shift((.5+tabdecsec[i]+tabdeclab[i])*dir(tabanglelabel[i]));
-filldraw(t1*secteur,i/n*color1+(1-i/n)*color2+white);
-label(tabmod[i],t2*(0,0),p3,Fill(p4));
-}
-shipout(bbox(3mm,white));
+import graph;
+size(300,0);
+int a=-1, b=1;
+real f(real x) {return x^3-x^2+2;}
+real g(real x) {return x^2;}
+draw(graph(f,a,b,operator ..),red);
+draw(graph(g,a,b,operator ..),0.5*orange);
+xaxis();
+int n=30;
+real width=(b-a)/(real) n;
+path w=graph(f,a,b,operator ..);
+path ww=graph(g,a,b,operator ..);
+path h=buildcycle((a,g(a))--(a,f(a)),w,(b,f(b))--(b,g(b)),ww);
+fill(h,0.5*orange);
+draw(h,0.5*yellow+linewidth(0.3mm));
+labelx("$a$",a);
+labelx("$b$",b);
+draw((a,0)--(a,g(a)),dotted);
+draw((b,0)--(b,g(b)),dotted);
+real m=a+0.73*(b-a);
+arrow("$f(x)$",(m,f(m)),N,red);
+arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
+int j=2;
+real xi=b-j*width;
+real xp=xi+width;
+real xm=0.5*(xi+xp);
+pair dot=(xm,0.5*(f(xm)+g(xm)));
+dot(dot,green+4.0);
+arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,green);

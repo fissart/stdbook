@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-2";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";

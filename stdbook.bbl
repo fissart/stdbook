@@ -1,3 +1,92 @@
 \begin{thebibliography}{}
 
+\bibitem [\protect \citeauthoryear {%
+Gallego%
+, Cid%
+, Brito%
+\BCBL {}\ \BBA {} Rojas%
+}{%
+Gallego%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+www}
+\APACinsertmetastar {%
+www}%
+\begin{APACrefauthors}%
+Gallego, J\BPBI C.%
+, Cid, C\BPBI D\BPBI V.%
+, Brito, J\BPBI G.%
+\BCBL {}\ \BBA {} Rojas, A\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Introducción a las técnicas de investigación social}
+  {Introducción a las técnicas de investigación social}.{\BBCQ}
+\newblock
+
+\newblock
+\APACrefnote{Google-Books-{ID}: 3HGUDAAAQBAJ}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gutiérrez%
+}{%
+Gutiérrez%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+reyes}
+\APACinsertmetastar {%
+reyes}%
+\begin{APACrefauthors}%
+Gutiérrez, S\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Competencia matemática y mediación del aprendizaje, en
+  estudiantes de la escuela de formación profesional de educación primaria,
+  UNSCH - 2015, {\normalfont(Tesis de maestr\'ia)}.} {Competencia matemática y
+  mediación del aprendizaje, en estudiantes de la escuela de formación
+  profesional de educación primaria, unsch - 2015, {\normalfont(tesis de
+  maestr\'ia)}.}
+\newblock
+\APACaddressPublisher{UNSCH, Ayacucho}{}.
+\newblock
+\begin{APACrefURL} \url{http://repositorio.unsch.edu.pe/handle/UNSCH/1357}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hilbert%
+\ \BBA {} Cohn-Vossen%
+}{%
+Hilbert%
+\ \BBA {} Cohn-Vossen%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+hilbert2020geometry}
+\APACinsertmetastar {%
+hilbert2020geometry}%
+\begin{APACrefauthors}%
+Hilbert, D.%
+\BCBT {}\ \BBA {} Cohn-Vossen, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {Geometry and the Imagination} {Geometry and the imagination}.
+\newblock
+\APACaddressPublisher{}{American Mathematical Society}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.com.pe/books?id=5y1tzgEACAAJ}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

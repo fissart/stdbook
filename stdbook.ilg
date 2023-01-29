@@ -1,4 +1,6 @@
 This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
-Scanning input file stdbook.idx...done (0 entries accepted, 0 rejected).
-Nothing written in stdbook.ind.
+Scanning input file stdbook.idx....done (9 entries accepted, 0 rejected).
+Sorting entries....done (32 comparisons).
+Generating output file stdbook.ind....done (16 lines written, 0 warnings).
+Output written in stdbook.ind.
 Transcript written in stdbook.ilg.

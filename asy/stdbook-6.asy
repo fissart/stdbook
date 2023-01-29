@@ -1,4 +1,5 @@
 if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
 defaultfilename="stdbook-6";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
@@ -12,32 +13,25 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-import graph;
-size(300,0);
-int a=-1, b=2;
-real f(real x) {return x^3-x+2;}
-real g(real x) {return x^2;}
-draw(graph(f,a,b,operator ..),red);
-draw(graph(g,a,b,operator ..),blue);
-xaxis();
-int n=30;
-real width=(b-a)/(real) n;
-path w=graph(f,a,b,operator ..);
-path ww=graph(g,a,b,operator ..);
-path h=buildcycle((a,g(a))--(a,f(a)),w,(b,f(b))--(b,g(b)),ww);
-fill(h,orange);
-draw(h,black+linewidth(0.3mm));
-labelx("$a$",a);
-labelx("$b$",b);
-draw((a,0)--(a,g(a)),dotted);
-draw((b,0)--(b,g(b)),dotted);
-real m=a+0.73*(b-a);
-arrow("$f(x)$",(m,f(m)),N,red);
-arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
-int j=2;
-real xi=b-j*width;
-real xp=xi+width;
-real xm=0.5*(xi+xp);
-pair dot=(xm,0.5*(f(xm)+g(xm)));
-dot(dot,green+4.0);
-arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,green);
+size(7cm,5cm,false);
+pair A=(8,37),B=(10,57.5);
+real yM=50;
+real xM=(yM-A.y)*(B.x-A.x)/(B.y-A.y)+A.x;
+real dx=.2(B.x-A.x), dy=.2(B.y-A.y);
+draw((A.x-dx,A.y-2dy)--(B.x+dx,A.y-2dy),.7bp+black);
+draw((A.x-2dx,A.y-dy)--(A.x-2dx,B.y+dy),.7bp+black);
+
+draw(A--B,1.2bp+black);
+dot("$A$",A,SW,blue);
+dot("$B$",B,NE,blue);
+dot("$M$",(xM,yM),SE,red);
+
+draw((A.x-2dx,A.y)--A--(A.x,A.y-2dy),dashed+.5bp+black);
+draw((A.x-2dx,B.y)--B--(B.x,A.y-2dy),dashed+.5bp+black);
+draw((A.x-2dx,yM)--(xM,yM)--(xM,A.y-2dy),dashed+.5bp+black);
+label(format("$%f$",A.x),(A.x,A.y-2dy),S);
+label(format("$%f$",A.y),(A.x-2dx,A.y),W);
+label(format("$%f$",B.x),(B.x,A.y-2dy),S);
+label(format("$%f$",B.y),(A.x-2dx,B.y),W);
+label("$x_M$?",(xM,A.y-2dy),S,red);
+label(format("$%f$",yM),(A.x-2dx,yM),W);
