@@ -1,52 +1,52 @@
 # Fdb version 3
-["bibtex stdbook"] 1675035694 "stdbook.aux" "stdbook.bbl" "stdbook" 1675036615
+["bibtex stdbook"] 1675035694 "stdbook.aux" "stdbook.bbl" "stdbook" 1675036821
   "/usr/share/texlive/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
   "bb.bib" 1674256775 30549 ee093154a10c77e62df5848c84b5130c ""
-  "stdbook.aux" 1675036615 7219 68244008594d6ae35095ce332c35e226 "lualatex"
+  "stdbook.aux" 1675036820 7219 68244008594d6ae35095ce332c35e226 "lualatex"
   (generated)
   "stdbook.bbl"
   "stdbook.blg"
-["cusdep asy pdf asy/stdbook-1"] 1674934848 "asy/stdbook-1.asy" "asy/stdbook-1.pdf" "asy/stdbook-1" 1675036615
-  "asy/stdbook-1.asy" 1675036614 1056 eb75bf81f64d7698f8c753c6fea6e2df "lualatex"
+["cusdep asy pdf asy/stdbook-1"] 1674934848 "asy/stdbook-1.asy" "asy/stdbook-1.pdf" "asy/stdbook-1" 1675036821
+  "asy/stdbook-1.asy" 1675036820 1056 eb75bf81f64d7698f8c753c6fea6e2df "lualatex"
   (generated)
   "asy/stdbook-1.pdf"
-["cusdep asy pdf asy/stdbook-10"] 1675034619 "asy/stdbook-10.asy" "asy/stdbook-10.pdf" "asy/stdbook-10" 1675036615
-  "asy/stdbook-10.asy" 1675036615 1118 65f33fbfcdce5c4faa94c3a520b3eb13 "lualatex"
+["cusdep asy pdf asy/stdbook-10"] 1675034619 "asy/stdbook-10.asy" "asy/stdbook-10.pdf" "asy/stdbook-10" 1675036821
+  "asy/stdbook-10.asy" 1675036820 1118 65f33fbfcdce5c4faa94c3a520b3eb13 "lualatex"
   (generated)
   "asy/stdbook-10.pdf"
-["cusdep asy pdf asy/stdbook-2"] 1674934847 "asy/stdbook-2.asy" "asy/stdbook-2.pdf" "asy/stdbook-2" 1675036615
-  "asy/stdbook-2.asy" 1675036614 1021 384b604cce20879bcb312398e653862a "lualatex"
+["cusdep asy pdf asy/stdbook-2"] 1674934847 "asy/stdbook-2.asy" "asy/stdbook-2.pdf" "asy/stdbook-2" 1675036821
+  "asy/stdbook-2.asy" 1675036820 1021 384b604cce20879bcb312398e653862a "lualatex"
   (generated)
   "asy/stdbook-2.pdf"
-["cusdep asy pdf asy/stdbook-3"] 1675035690 "asy/stdbook-3.asy" "asy/stdbook-3.pdf" "asy/stdbook-3" 1675036615
-  "asy/stdbook-3.asy" 1675036615 1237 97150962886a09afda2ad673bc9f1a96 "lualatex"
+["cusdep asy pdf asy/stdbook-3"] 1675035690 "asy/stdbook-3.asy" "asy/stdbook-3.pdf" "asy/stdbook-3" 1675036821
+  "asy/stdbook-3.asy" 1675036820 1237 97150962886a09afda2ad673bc9f1a96 "lualatex"
   (generated)
   "asy/stdbook-3.pdf"
-["cusdep asy pdf asy/stdbook-4"] 1674935361 "asy/stdbook-4.asy" "asy/stdbook-4.pdf" "asy/stdbook-4" 1675036615
-  "asy/stdbook-4.asy" 1675036615 844 43b87d28d7cd60638dbb4f22490d88d9 "lualatex"
+["cusdep asy pdf asy/stdbook-4"] 1674935361 "asy/stdbook-4.asy" "asy/stdbook-4.pdf" "asy/stdbook-4" 1675036821
+  "asy/stdbook-4.asy" 1675036820 844 43b87d28d7cd60638dbb4f22490d88d9 "lualatex"
   (generated)
   "asy/stdbook-4.pdf"
-["cusdep asy pdf asy/stdbook-5"] 1675024917 "asy/stdbook-5.asy" "asy/stdbook-5.pdf" "asy/stdbook-5" 1675036615
-  "asy/stdbook-5.asy" 1675036615 1449 21ca4a34ac5c4a5922bf40e0d99a3b7e "lualatex"
+["cusdep asy pdf asy/stdbook-5"] 1675024917 "asy/stdbook-5.asy" "asy/stdbook-5.pdf" "asy/stdbook-5" 1675036821
+  "asy/stdbook-5.asy" 1675036820 1449 21ca4a34ac5c4a5922bf40e0d99a3b7e "lualatex"
   (generated)
   "asy/stdbook-5.pdf"
-["cusdep asy pdf asy/stdbook-6"] 1674939289 "asy/stdbook-6.asy" "asy/stdbook-6.pdf" "asy/stdbook-6" 1675036615
-  "asy/stdbook-6.asy" 1675036615 1133 141c81f81fb6b44f05947f4448e86bbf "lualatex"
+["cusdep asy pdf asy/stdbook-6"] 1674939289 "asy/stdbook-6.asy" "asy/stdbook-6.pdf" "asy/stdbook-6" 1675036821
+  "asy/stdbook-6.asy" 1675036820 1133 141c81f81fb6b44f05947f4448e86bbf "lualatex"
   (generated)
   "asy/stdbook-6.pdf"
-["cusdep asy pdf asy/stdbook-7"] 1674935360 "asy/stdbook-7.asy" "asy/stdbook-7.pdf" "asy/stdbook-7" 1675036615
-  "asy/stdbook-7.asy" 1675036615 1164 aae77900172283556dbfbf235bec1761 "lualatex"
+["cusdep asy pdf asy/stdbook-7"] 1674935360 "asy/stdbook-7.asy" "asy/stdbook-7.pdf" "asy/stdbook-7" 1675036821
+  "asy/stdbook-7.asy" 1675036820 1164 aae77900172283556dbfbf235bec1761 "lualatex"
   (generated)
   "asy/stdbook-7.pdf"
-["cusdep asy pdf asy/stdbook-8"] 1674935359 "asy/stdbook-8.asy" "asy/stdbook-8.pdf" "asy/stdbook-8" 1675036615
-  "asy/stdbook-8.asy" 1675036615 1040 4c4f1d7c05628763d046f95747c0d861 "lualatex"
+["cusdep asy pdf asy/stdbook-8"] 1674935359 "asy/stdbook-8.asy" "asy/stdbook-8.pdf" "asy/stdbook-8" 1675036821
+  "asy/stdbook-8.asy" 1675036820 1040 4c4f1d7c05628763d046f95747c0d861 "lualatex"
   (generated)
   "asy/stdbook-8.pdf"
-["cusdep asy pdf asy/stdbook-9"] 1674935358 "asy/stdbook-9.asy" "asy/stdbook-9.pdf" "asy/stdbook-9" 1675036615
-  "asy/stdbook-9.asy" 1675036615 1155 c918cebf63612030cb6a7bb291147fe2 "lualatex"
+["cusdep asy pdf asy/stdbook-9"] 1674935358 "asy/stdbook-9.asy" "asy/stdbook-9.pdf" "asy/stdbook-9" 1675036821
+  "asy/stdbook-9.asy" 1675036820 1155 c918cebf63612030cb6a7bb291147fe2 "lualatex"
   (generated)
   "asy/stdbook-9.pdf"
-["lualatex"] 1675036613 "stdbook.tex" "stdbook.pdf" "stdbook" 1675036615
+["lualatex"] 1675036819 "stdbook.tex" "stdbook.pdf" "stdbook" 1675036821
   "/home/linuxlite/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1672109518 77648 635edc0fb9f622fbc9be2006018b3690 ""
   "/home/linuxlite/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-bold.luc" 1672109477 77887 dedde80919eab63e9ae103795497ab41 ""
   "/home/linuxlite/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1671990124 124213 a3bd0e7906af025b007d0cfb6e758f8b ""
@@ -240,14 +240,14 @@
   "asy/stdbook-8.pdf" 1674935360 99586 2decebeb86a371e74bf172ee26130957 "cusdep asy pdf asy/stdbook-8"
   "asy/stdbook-9.pdf" 1674935359 49361 7385f78075b53d9e2fc2e1996ca34794 "cusdep asy pdf asy/stdbook-9"
   "bb.bib" 1674256775 30549 ee093154a10c77e62df5848c84b5130c ""
-  "stdbook.aux" 1675036615 7219 68244008594d6ae35095ce332c35e226 "lualatex"
+  "stdbook.aux" 1675036820 7219 68244008594d6ae35095ce332c35e226 "lualatex"
   "stdbook.bbl" 1675035694 2177 89c93a29e023836e9b59918df64c342a "bibtex stdbook"
   "stdbook.ind" 1675017716 336 0ea1561f32456774ab94c0e93ae21aa3 "makeindex stdbook.idx"
-  "stdbook.lof" 1675036615 795 7bfb3fde86f93db3ffa91a5e58855377 "lualatex"
-  "stdbook.lot" 1675036615 465 312f5bd8fc28a811c2b1ba09e08d313b "lualatex"
-  "stdbook.pre" 1675036615 451 66bc6a95dc73269d1f117df1add75cc5 "lualatex"
-  "stdbook.tex" 1675036613 26637 792bf2a67c1423658e3f44f19d582872 ""
-  "stdbook.toc" 1675036615 2134 7ed321f28c529a43cd181bf7b211ebdb "lualatex"
+  "stdbook.lof" 1675036820 795 7bfb3fde86f93db3ffa91a5e58855377 "lualatex"
+  "stdbook.lot" 1675036820 465 312f5bd8fc28a811c2b1ba09e08d313b "lualatex"
+  "stdbook.pre" 1675036820 451 66bc6a95dc73269d1f117df1add75cc5 "lualatex"
+  "stdbook.tex" 1675036818 26670 f6b7291d9db8117b437f321f157fa84f ""
+  "stdbook.toc" 1675036820 2134 7ed321f28c529a43cd181bf7b211ebdb "lualatex"
   (generated)
   "asy/stdbook-1.asy"
   "asy/stdbook-10.asy"
@@ -267,8 +267,8 @@
   "stdbook.pdf"
   "stdbook.pre"
   "stdbook.toc"
-["makeindex stdbook.idx"] 1675017716 "stdbook.idx" "stdbook.ind" "stdbook" 1675036615
-  "stdbook.idx" 1675036615 328 bb0033eaf6f9fe6d1d109bb294517300 "lualatex"
+["makeindex stdbook.idx"] 1675017716 "stdbook.idx" "stdbook.ind" "stdbook" 1675036821
+  "stdbook.idx" 1675036820 328 bb0033eaf6f9fe6d1d109bb294517300 "lualatex"
   (generated)
   "stdbook.ilg"
   "stdbook.ind"
