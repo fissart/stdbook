@@ -14,31 +14,16 @@ defaultpen(linewidth(0.7pt));
 settings.render=2;
 
 import graph;
-size(300,0);
-int a=-1, b=1;
-real f(real x) {return x^3-x^2+2;}
-real g(real x) {return x^2;}
-draw(graph(f,a,b,operator ..),red);
-draw(graph(g,a,b,operator ..),0.5*orange);
-xaxis();
-int n=30;
-real width=(b-a)/(real) n;
-path w=graph(f,a,b,operator ..);
-path ww=graph(g,a,b,operator ..);
-path h=buildcycle((a,g(a))--(a,f(a)),w,(b,f(b))--(b,g(b)),ww);
-fill(h,0.5*orange);
-draw(h,0.5*yellow+linewidth(0.3mm));
-labelx("$a$",a);
-labelx("$b$",b);
-draw((a,0)--(a,g(a)),dotted);
-draw((b,0)--(b,g(b)),dotted);
-real m=a+0.73*(b-a);
-arrow("$f(x)$",(m,f(m)),N,red);
-arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
-int j=2;
-real xi=b-j*width;
-real xp=xi+width;
-real xm=0.5*(xi+xp);
-pair dot=(xm,0.5*(f(xm)+g(xm)));
-dot(dot,green+4.0);
-arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,green);
+size(4inches,0);
+
+real f1(real x) {return (1+x^2);}
+real f2(real x) {return (4-x);}
+
+xaxis("$x$",LeftTicks,Arrow);
+yaxis("$y$",RightTicks,Arrow);
+
+draw("$y=1+x^2$",graph(f1,-2,1));
+dot((1,f1(1)),UnFill);
+
+draw("$y=4-x$",graph(f2,1,5),LeftSide,red,Arrow);
+dot((1,f2(1)),red);

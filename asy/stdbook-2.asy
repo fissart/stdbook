@@ -13,28 +13,40 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-size(300);
-path ltrans(path p,int d)
-{
-path a=rotate(65)*scale(0.4)*p;
-return shift(point(p,(1/d)*length(p))-point(a,0))*a;
-}
-path rtrans(path p, int d)
-{
-path a=reflect(point(p,0),point(p,length(p)))*rotate(65)*scale(0.35)*p;
-return shift(point(p,(1/d)*length(p))-point(a,0))*a;
+import graph;
+size(0,150);
+
+int a=-1, b=1;
+
+real f(real x) {return x^3-x+2;}
+real g(real x) {return x^2;}
+
+draw(graph(f,a,b,operator ..),red);
+draw(graph(g,a,b,operator ..),blue);
+
+xaxis();
+
+int n=5;
+
+real width=(b-a)/(real) n;
+for(int i=0; i <= n; ++i) {
+real x=a+width*i;
+draw((x,g(x))--(x,f(x)));
 }
 
-void drawtree(int depth, path branch)
-{
-if(depth == 0) return;
-real breakp=(1/depth)*length(branch);
-draw(subpath(branch,0,breakp),blue);
-drawtree(depth-1,subpath(branch,breakp,length(branch)));
-drawtree(depth-1,ltrans(branch,depth));
-drawtree(depth-1,rtrans(branch,depth));
-return;
-}
+labelx("$a$",a);
+labelx("$b$",b);
+draw((a,0)--(a,g(a)),dotted);
+draw((b,0)--(b,g(b)),dotted);
 
-path start=(0,0)..controls (-1/10,1/3) and (-1/20,2/3)..(1/20,1);
-drawtree(7,start);
+real m=a+0.73*(b-a);
+arrow("$f(x)$",(m,f(m)),N,red);
+arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
+
+int j=2;
+real xi=b-j*width;
+real xp=xi+width;
+real xm=0.5*(xi+xp);
+pair dot=(xm,0.5*(f(xm)+g(xm)));
+dot(dot,darkgreen+4.0);
+arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,darkgreen);

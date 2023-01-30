@@ -14,22 +14,31 @@ defaultpen(linewidth(0.7pt));
 settings.render=2;
 
 import graph;
-size(12cm,7cm,IgnoreAspect);
-typedef real realfcn(real);
-realfcn F(real p) {
-return new real(real t) {return 1/(sqrt(2*pi)*(1/(4*p)))*exp(-(t-1/(2*p))^2/(2*(1/(4*p))^2));};
-}
-for(int i=1; i < 7; ++i){
-real rho=(1/(4*i));
-real mu=(1/(2*i));
-draw(graph(F(i),-0.1,1, n=200, Hermite),Pen(i),
-"$\frac{1}{"+format( "%.3f", rho)+"\sqrt{2\pi}}{e^{-\frac{(x-"+format( "%.3f", mu)+")^2}{2("+format( "%.3f", rho)+")^2}}}$");
-}
-label("$\displaystyle\frac{1}{\rho\sqrt{2\pi}}{e^{-\frac{(x-\mu)^2}{2(\rho)^2}}}$",(0.5,8));
-xaxis("$x$",0.1,LeftTicks);
-yaxis("$y$",0,LeftTicks);
-//xaxis(BottomTop,LeftTicks);
-//yaxis(LeftRight,RightTicks(trailingzero));
-//yaxis("$y$",LeftRight,RightTicks(trailingzero));
-//attach(legend(),truepoint(E),20E,UnFill);
-attach(legend(2),(point(S).x,truepoint(S).y),1S);
+size(300,0);
+int a=-1, b=1;
+real f(real x) {return x^3-x^2+2;}
+real g(real x) {return x^2;}
+draw(graph(f,a,b,operator ..),red);
+draw(graph(g,a,b,operator ..),0.5*orange);
+xaxis();
+int n=30;
+real width=(b-a)/(real) n;
+path w=graph(f,a,b,operator ..);
+path ww=graph(g,a,b,operator ..);
+path h=buildcycle((a,g(a))--(a,f(a)),w,(b,f(b))--(b,g(b)),ww);
+fill(h,0.5*orange);
+draw(h,0.5*yellow+linewidth(0.3mm));
+labelx("$a$",a);
+labelx("$b$",b);
+draw((a,0)--(a,g(a)),dotted);
+draw((b,0)--(b,g(b)),dotted);
+real m=a+0.73*(b-a);
+arrow("$f(x)$",(m,f(m)),N,red);
+arrow("$g(x)$",(m,g(m)),E,0.8cm,blue);
+int j=2;
+real xi=b-j*width;
+real xp=xi+width;
+real xm=0.5*(xi+xp);
+pair dot=(xm,0.5*(f(xm)+g(xm)));
+dot(dot,green+4.0);
+arrow("$\left(x,\frac{f(x)+g(x)}{2}\right)$",dot,NE,2cm,green);

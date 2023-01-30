@@ -13,23 +13,40 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
-import graph;
-size(12cm,7cm,IgnoreAspect);
-typedef real realfcn(real);
-realfcn F(real p) {
-return new real(real t) {return 1/(pi*(p)*(1+((t-5)/(p))^2));};
-}
-for(int i=1; i < 7; ++i){
-real rho=(1/(4*i));
-real mu=(1/(2*i));
-draw(graph(F(i),0,10, n=200, Hermite),Pen(i),
-"$\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$");
-}
-label("$\displaystyle\frac{1}{p\pi\left(1+\frac{t-5}{p^2}\right)}$",(7,0.3));
-xaxis("$x$",0.1,LeftTicks);
-yaxis("$y$",0,LeftTicks);
-//xaxis(BottomTop,LeftTicks);
-//yaxis(LeftRight,RightTicks(trailingzero));
-//yaxis("$y$",LeftRight,RightTicks(trailingzero));
-//attach(legend(),truepoint(E),20E,UnFill);
-attach(legend(2),(point(S).x,truepoint(S).y),1S);
+size(0,150);
+
+pen colour1=red;
+pen colour2=green;
+
+pair z0=(0,0);
+pair z1=(-1,0);
+pair z2=(1,0);
+real r=1.5;
+path c1=circle(z1,r);
+path c2=circle(z2,r);
+fill(c1,colour1);
+fill(c2,colour2);
+
+picture intersection;
+fill(intersection,c1,colour1+colour2);
+clip(intersection,c2);
+
+add(intersection);
+
+draw(c1);
+draw(c2);
+
+label("$A$",z1);
+label("$B$",z2);
+
+pair z=(0,-2);
+real m=3;
+margin BigMargin=Margin(0,m*dot(unit(z1-z),unit(z0-z)));
+
+draw(Label("$A\cap B$",0),conj(z)--z0,Arrow,BigMargin);
+draw(Label("$A\cup B$",0),z--z0,Arrow,BigMargin);
+draw(z--z1,Arrow,Margin(0,m));
+draw(z--z2,Arrow,Margin(0,m));
+
+shipout(bbox(0.25cm));
+

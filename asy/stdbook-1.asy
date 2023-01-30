@@ -13,26 +13,25 @@ defaultpen(fontsize(11 pt));
 defaultpen(linewidth(0.7pt));
 settings.render=2;
 
+import three;
+import palette;
 import graph3;
-size(300,0);
-currentprojection=perspective(8,-8,8);
-triple f(pair t) {
-real u=t.x;
-real v=t.y;
-real r=2-cos(u);
-real x=3*cos(u)*(1+sin(u))+r*cos(v)*(u < pi ? cos(u) : -1);
-real y=8*sin(u)+(u < pi ? r*sin(u)*cos(v) : 0);
-real z=r*sin(v);
-return (x,y,z);
-}
-surface s=surface(f,(0,0),(2pi,2pi),16,8,Spline);
-draw(s,blue+opacity(0.7), meshpen=black+0.6bp,render(merge=true));
 
-string lo="$\alpha=\sum_1^\infty$";
-string hi="$\beta=\rho^3$";
-real h=0.05;
-begingroup3("parametrization");
-//draw(surface(scale(0.08)*lo,s,0,1,h,bottom=false),"[0,0.5pi]");
-//draw(surface(scale(0.08)*rotate(90)*hi,s,2,1,h,bottom=false),"[pi,2pi]");
-endgroup3();
-//axes3("$x$","$y$","$z$", Arrows3);
+size(10cm,0);
+
+currentprojection=perspective(-30,-30,30,up=Z);
+
+surface s;
+
+for(int i = 0; i < 10; ++i) {
+for(int j = 0; j < 10; ++j) {
+s.append(shift(i,j,0)*scale(1,1,i+j)*unitcube);
+}
+}
+
+s.colors(palette(s.map(zpart),Rainbow()));
+draw(s,meshpen=black+thick(),nolight,render(merge=true));
+
+xaxis3("$x$",Bounds,InTicks(endlabel=false,Label,2,2));
+yaxis3(YZ()*"$y$",Bounds,InTicks(beginlabel=false,Label,2,2));
+zaxis3(XZ()*"$z$",Bounds,InTicks);
